@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: "Franklin Gothic Book";
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #90979B,#1F7DB6);
+    padding: 0 !important;
+}
+#banner
+{
+    background-image: linear-gradient(to right, #90979B,#1F7DB6);
+    color: azure;
+    padding-top: 1%;
+}
+.promo-title
+{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+.bottom-img
+{
+    width: 100%;
+}
+/*-------product section-------------*/
+#products
+{
+    padding: 80px 0;
+}
+.products-img
+{
+    width: 200px;
+    margin-top: 20px;
+}
+.products h4
+{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+.title::before
+{
+    content: '';
+    background: darkslategray;
+    height: 5px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.title::after
+{
+    content: '';
+    background: black;
+    height: 10px;
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(8px);
+}
+#services .btn-primary
+{
+    margin-top: 100px;
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #755F73,#9E3893);
+}
+
+/*-------------About us--------------------------*/
+#about-us .btn-primary
+{
+    margin-top: 50px;
+    margin-left: 46%;
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #755F73,#9E3893);
+}
+
+/*--------------------------social media---------------------*/
+#social-media
+{
+    background: white;
+    padding: 100px 0;
+}
+#social-media p
+{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.social-icons img
+{
+    width: 60px;
+    transition: 0.5s;
+}
+.social-icons a:hover img
+{
+    transform: translateY(-20px);
+}
+
+/*-----------------------footer----------------*/
+#footer
+{
+    background-image: linear-gradient(to right, #90979B,#1F7DB6);
+    color: black;
+}
+
+/*-------------------------build----------------*/
+#cart .btn-primary
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #755F73,#9E3893);
+}

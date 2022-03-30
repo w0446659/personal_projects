@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckoutPage</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+          crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="PClogo.png"></a>
+        <p><h1>Compu-Build Computers</h1></p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Homepage.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MEET the TEAM
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Shannon</a>
+                        <a class="dropdown-item" href="#">Ryan</a>
+
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</section>
+
+<!----------------------form------------------>
+<body>
+<p>Thank you for shopping at Compu-Build Computers.  Shannon or Ryan will get in touch with you within 24 hours to discuss your purchase</p>
+<style>
+    div.a {
+        text-align: center;
+    }
+</style>
+
+<form id="survey" method="post">
+    <fieldset id="custinfo">
+        <legend>Customer Information</legend>
+
+        <div class="formRow">
+            <label for="name">Name*</label>
+            <input name="custName" id="name" accesskey="1" autocomplete="true" type="text" placeholder="First and Last Name" required />
+        </div>
+
+        <div class="formRow">
+            <label for="street">Street Address</label>
+            <input name="custStreet" id="street" accesskey="2" autocomplete="true" type="text" placeholder="123 Main St." />
+        </div>
+
+        <div class="formRow">
+            <label for="city">City</label>
+            <input name="custCity" id="city" accesskey="3" autocomplete="true" type="text" placeholder="Kingston" />
+        </div>
+
+        <div class="formRow">
+            <label for="province">Province</label>
+            <input name="custState" id="state" accesskey="4" autocomplete="true" type="text" placeholder="NS" />
+        </div>
+
+        <div class="formRow">
+            <label for="zip">Postal code</label>
+            <input name="custZip" id="zip" accesskey="5" autocomplete="true" type="text" placeholder="nnnnn (-nnnn)"
+            <pattern="^\d{5}(-\d{4})?$" />
+        </div>
+
+        <div class="formRow">
+            <label for="phone">Phone number</label>
+            <input name="custPhone" id="phone" autocomplete="true" accesskey="6" type="tel" placeholder="(nnn) nnn-nnnn"
+            <pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+        </div>
+
+        <div class="formRow">
+            <label for="mail">E-mail*</label>
+            <input name="custEmail" id="mail" autocomplete="true" accesskey="7" type="email" required placeholder="example@123.com"/>
+        </div>
+
+
+    </fieldset>
+
+</form>
+<p>Thank you for your support!</p>
+
+<a href="Homepage.html">
+    <button type="button" class="btn btn-primary">Checkout</button>
+</a>
+<p>       </p>
+<!--------------------footer------------------->
+<section id="footer">
+    <div class="container-fluid">
+        <p>Compu-Build Computers, Annapolis Valley, NS</p>
+        <p>Website by Shannon Bulgar and Ryan Schaffrick 1 December 2021</p>
+    </div>
+</section>
+</body>
+</html>
